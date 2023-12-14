@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isSecond: Bool = false
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(isSecond ? "Hello, world!" : "Goodbye, world!")
+            StateSwitchView(isSecond: $isSecond,
+                            leftSide: "Left",
+                            rightSide:"Right",
+                            activeBackground: .accentColor)
         }
         .padding()
     }

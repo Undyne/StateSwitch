@@ -14,6 +14,9 @@
 		C9C986072B2A203C004105FE /* StateSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C986062B2A203C004105FE /* StateSwitchTests.swift */; };
 		C9C986112B2A203C004105FE /* StateSwitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C986102B2A203C004105FE /* StateSwitchUITests.swift */; };
 		C9C986132B2A203C004105FE /* StateSwitchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C986122B2A203C004105FE /* StateSwitchUITestsLaunchTests.swift */; };
+		C9C986232B2A20AE004105FE /* StateViewSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C986202B2A20AE004105FE /* StateViewSetter.swift */; };
+		C9C986242B2A20AE004105FE /* StatePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C986212B2A20AE004105FE /* StatePreferenceKey.swift */; };
+		C9C986252B2A20AE004105FE /* StateSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C986222B2A20AE004105FE /* StateSwitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		C9C9860C2B2A203C004105FE /* StateSwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateSwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C986102B2A203C004105FE /* StateSwitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSwitchUITests.swift; sourceTree = "<group>"; };
 		C9C986122B2A203C004105FE /* StateSwitchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSwitchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C9C986202B2A20AE004105FE /* StateViewSetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateViewSetter.swift; sourceTree = "<group>"; };
+		C9C986212B2A20AE004105FE /* StatePreferenceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatePreferenceKey.swift; sourceTree = "<group>"; };
+		C9C986222B2A20AE004105FE /* StateSwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateSwitchView.swift; sourceTree = "<group>"; };
+		C9C986262B2B7444004105FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +81,7 @@
 		C9C985E92B2A203B004105FE = {
 			isa = PBXGroup;
 			children = (
+				C9C986262B2B7444004105FE /* README.md */,
 				C9C985F42B2A203B004105FE /* StateSwitch */,
 				C9C986052B2A203C004105FE /* StateSwitchTests */,
 				C9C9860F2B2A203C004105FE /* StateSwitchUITests */,
@@ -94,6 +102,7 @@
 		C9C985F42B2A203B004105FE /* StateSwitch */ = {
 			isa = PBXGroup;
 			children = (
+				C9C9861F2B2A206A004105FE /* StateSwitchView */,
 				C9C985F52B2A203B004105FE /* StateSwitchApp.swift */,
 				C9C985F72B2A203B004105FE /* ContentView.swift */,
 				C9C985F92B2A203C004105FE /* Assets.xcassets */,
@@ -125,6 +134,16 @@
 				C9C986122B2A203C004105FE /* StateSwitchUITestsLaunchTests.swift */,
 			);
 			path = StateSwitchUITests;
+			sourceTree = "<group>";
+		};
+		C9C9861F2B2A206A004105FE /* StateSwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				C9C986212B2A20AE004105FE /* StatePreferenceKey.swift */,
+				C9C986222B2A20AE004105FE /* StateSwitchView.swift */,
+				C9C986202B2A20AE004105FE /* StateViewSetter.swift */,
+			);
+			path = StateSwitchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C986242B2A20AE004105FE /* StatePreferenceKey.swift in Sources */,
+				C9C986232B2A20AE004105FE /* StateViewSetter.swift in Sources */,
+				C9C986252B2A20AE004105FE /* StateSwitchView.swift in Sources */,
 				C9C985F82B2A203B004105FE /* ContentView.swift in Sources */,
 				C9C985F62B2A203B004105FE /* StateSwitchApp.swift in Sources */,
 			);
@@ -425,6 +447,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +477,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
